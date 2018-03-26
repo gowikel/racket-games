@@ -1,6 +1,13 @@
 #lang racket
 (require 2htdp/universe 2htdp/image)
 
+(define UPPER-RANDOM-LIMIT 1000)
+(define TEXT-SIZE 32)
+(define HELP-TOP
+  (text "'\u2191' for bigger numbers, '\u2193' for smaller ones" TEXT-SIZE "black"))
+(define HELP-BOTTOM
+  (text "Press '=' to confirm the number." TEXT-SIZE "black"))
+
 (struct search (bottom top reduce-limit) #:transparent)
 
 (define (guess search)
@@ -31,13 +38,6 @@
     [(key=? key "down") (on-down-key-pressed state)]
     [(key=? key "=") (on-equal-key-pressed state)]
     [else state]))
-
-(define UPPER-RANDOM-LIMIT 1000)
-(define TEXT-SIZE 32)
-(define HELP-TOP
-  (text "'\u2191' for bigger numbers, '\u2193' for smaller ones" TEXT-SIZE "black"))
-(define HELP-BOTTOM
-  (text "Press '=' to confirm the number." TEXT-SIZE "black"))
 
 (define (guess-text n color)
   (text
