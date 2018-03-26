@@ -12,3 +12,6 @@ The machine uses a binary search to do an optimal search between all possible nu
 To do things more interesting, I allow to search any positive number (instead of
 numbers between 0-100). Because of that, the machine must adapt the algorithm at the
 beginning, increasing the search range until you press the 'lower' button.
+
+Last, to do the game a bit more natural, the initial upper limit is initially set to
+a random number.
