@@ -15,3 +15,10 @@ beginning, increasing the search range until you press the 'lower' button.
 
 Last, to do the game a bit more natural, the initial upper limit is initially set to
 a random number.
+
+## Challenges
+The book also has some challenges, which are made to practice your skills in racket. Here
+I upload my own solutions
+
+- Locomotive: Create locomotive's picture and move it from left to right. When the
+  locomotive hides on the right, it should move to the left and start again.
