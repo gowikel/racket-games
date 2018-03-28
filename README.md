@@ -22,3 +22,5 @@ I upload my own solutions
 
 - Locomotive: Create locomotive's picture and move it from left to right. When the
   locomotive hides on the right, it should move to the left and start again.
+- Guess my number with score limit: Modify the guess my number game to count the number
+  of guesses that the machine has to make to guess the game.
